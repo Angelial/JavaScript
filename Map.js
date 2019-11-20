@@ -114,10 +114,10 @@ console.log('==================== [\'1\', \'2\', \'3\'].map(parseInt) ==========
 // ['1', '2', '3'].map(parseInt)
 
 // 实际执行的代码
-const parse = ['1', '2', '3'].map((item, index) => {
+const parse = ['1', '2', '10'].map((item, index) => {
   return parseInt(item, index)
 })
-console.log(parse)
+console.log(parse) // 1 nan 2
 
 // 解析 ：parseInt()函数解析一个字符串参数，并返回一个指定基数的整数
 // const intValue = parseInt(string[, radix]);
